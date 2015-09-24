@@ -1,13 +1,20 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
+		sass: {                              // Task 
+    	dist: {                            // Target 
+      	files: {                         // Dictionary of files 
+        'assets/stylesheets/land.css': 'assets/stylesheets/src/land.scss',
+        'assets/stylesheets/common.css': 'assets/stylesheets/src/common.scss'
+      }
+    }
+  },
+
 		watch: {
   		css: {
-    		files: ['*.scss'],
+    		files: ['assets/stylesheets/src/*.scss'],
     		tasks: ['sass'],
   		}
 		},
-
-	
 
   'http-server': {
       'dev': {
@@ -34,16 +41,8 @@ module.exports = function(grunt) {
             /// (default state is disabled) 
         }
  
-    },
- 
-
-  	sass: {                              // Task 
-    	dist: {                            // Target 
-      	files: {                         // Dictionary of files 
-        'styles.css': 'styles.scss'
-      }
     }
-  }
+   	
 });
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
