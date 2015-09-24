@@ -12,7 +12,15 @@ module.exports = function(grunt) {
 		watch: {
   		css: {
     		files: ['assets/stylesheets/src/*.scss'],
-    		tasks: ['sass'],
+    		tasks: ['sass', 'cssmin'],
+  		}
+		},
+
+		cssmin: {
+  		target: {
+    		files: {
+      		'assets/stylesheets/app.min.css': ['assets/stylesheets/common.css', 'assets/stylesheets/land.css']
+    		}
   		}
 		},
 
@@ -48,6 +56,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-http-server');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-	grunt.registerTask('default',['sass', 'http-server:dev', 'watch']);
+	grunt.registerTask('default',['sass', 'cssmin', 'http-server:dev', 'watch']);
 }
