@@ -1,14 +1,45 @@
 body {
 	font-family: 'Lato', sans-serif;
 
-}
-
 	.cont, .cont2 {
 		border: 1px solid transparent;
-}
+	}
+
+	.cont {
+		margin-bottom: 10em;
+	}
 
 	.cont2 {
-		color: black;
+		color: #FFF;
 		margin: 100px auto;
-    margin-top: 26em;
+		margin-top: 19em;
+	}
+
+	#get_started {
+		font-size: 1.1em;
+		padding: 1em 1em;
+	}
+}
+
+#fire {
+	background-color: white;
+	margin-top: 5em;
+	margin-bottom: 4em;
+	margin-right: -2em;
+
+	a {
+		margin-top: 2em;
+	}
+}
+
+
+#last_slide {
+	margin-top: 5em;
+	margin-bottom: 4em;
+	margin-right: -2em;
+
+
+	.fa {
+	  font-size: center;
+  }
 }

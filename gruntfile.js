@@ -22,10 +22,11 @@ module.exports = function(grunt) {
       		'assets/stylesheets/app.min.css': ['assets/stylesheets/common.css', 'assets/stylesheets/land.css']
     		}
   		}
-		},
+  	}
+	});
 
-  'http-server': {
-      'dev': {
+  /*'http-server': {
+     'dev': {
             root: './',
             port: 8282,
             // the host ip address 
@@ -51,12 +52,12 @@ module.exports = function(grunt) {
  
     }
    	
-});
+}); */
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-http-server');
+	//grunt.loadNpmTasks('grunt-http-server');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-	grunt.registerTask('default',['sass', 'cssmin', 'http-server:dev', 'watch']);
+	grunt.registerTask('default',['sass', 'cssmin', 'watch']);
 }

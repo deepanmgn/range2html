@@ -1,12 +1,30 @@
 body {
   font-family: 'Lato', sans-serif; }
+  body .cont, body .cont2 {
+    border: 1px solid transparent; }
+  body .cont {
+    margin-bottom: 10em; }
+  body .cont2 {
+    color: #FFF;
+    margin: 100px auto;
+    margin-top: 19em; }
+  body #get_started {
+    font-size: 1.1em;
+    padding: 1em 1em; }
 
-.cont, .cont2 {
-  border: 1px solid transparent; }
+#fire {
+  background-color: white;
+  margin-top: 5em;
+  margin-bottom: 4em;
+  margin-right: -2em; }
+  #fire a {
+    margin-top: 2em; }
 
-.cont2 {
-  color: black;
-  margin: 100px auto;
-  margin-top: 26em; }
+#last_slide {
+  margin-top: 5em;
+  margin-bottom: 4em;
+  margin-right: -2em; }
+  #last_slide .fa {
+    font-size: center; }
 
 /*# sourceMappingURL=common.css.map */
